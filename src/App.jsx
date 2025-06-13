@@ -87,23 +87,21 @@ function App() {
   const [filter, setFilter] = useState("All");
 
   const galleryItems = [
-    { src: "/images/Screenshot-230252.png", tag: "UX/UI Designing" },
-    { src: "/images/Screenshot-230520.png", tag: "เว็บไซต์" },
-    { src: "/images/Screenshot-230520.png", tag: "Graphic Designing" },
-    { src: "/images/Screenshot-230520.png", tag: "Graphic Designing" },
-    { src: "/images/Screenshot-230520.png", tag: "Graphic Designing" },
-    { src: "/images/Screenshot-230520.png", tag: "เว็บไซต์" },
-    { src: "/images/Screenshot-230520.png", tag: "UX/UI Designing" },
-    { src: "/images/Screenshot-230755.png", tag: "UX/UI Designing" },
-    { src: "/images/Screenshot-225130.png", tag: "UX/UI Designing" },
-    { src: "/images/Screenshot-225901.png", tag: "UX/UI Designing" },
-    { src: "/images/Screenshot-230938.png", tag: "UX/UI Designing" },
-    { src: "/images/Screenshot-234113.png", tag: "certificate" },
-    { src: "/images/Screenshot-233746.png", tag: "certificate" },
-    { src: "/images/project1.png", tag: "Graphic Designing" },
-    { src: "/images/Screenshot-233534.png", tag: "certificate" },
-    
-    
+    { src: "./images/Screenshot-230252.png", tag: "UX/UI Designing" },
+    { src: "./images/Screenshot-230520.png", tag: "เว็บไซต์" },
+    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
+    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
+    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
+    { src: "./images/Screenshot-230520.png", tag: "เว็บไซต์" },
+    { src: "./images/Screenshot-230520.png", tag: "UX/UI Designing" },
+    { src: "./images/Screenshot-230755.png", tag: "UX/UI Designing" },
+    { src: "./images/Screenshot-225130.png", tag: "UX/UI Designing" },
+    { src: "./images/Screenshot-225901.png", tag: "UX/UI Designing" },
+    { src: "./images/Screenshot-230938.png", tag: "UX/UI Designing" },
+    { src: "./images/Screenshot-234113.png", tag: "certificate" },
+    { src: "./images/Screenshot-233746.png", tag: "certificate" },
+    { src: "./images/project1.png", tag: "Graphic Designing" },
+    { src: "./images/Screenshot-233534.png", tag: "certificate" },
   ];
 
   const filteredItems =
@@ -116,8 +114,8 @@ function App() {
       {/* Navbar */}
       <nav className="bg-white border-b dark:bg-gray-900 fixed top-0 left-0 w-full z-50 shadow-md">
         <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
-          <a href="/" className="flex items-center space-x-3">
-            <img src="/images/open-book.png" className="h-8" alt="Logo" />
+          <a href="#" className="flex items-center space-x-3">
+            <img src="./images/open-book.png" className="h-8" alt="Logo" />
             <span className="text-2xl font-bold dark:text-white">
               My Profile
             </span>
@@ -141,60 +139,82 @@ function App() {
             </svg>
           </button>
           <div className="hidden md:flex md:items-center md:space-x-6">
-            <a href="#" className="text-blue-600 font-semibold">
+            <a href="#home" className="text-blue-600 font-semibold">
               Home
             </a>
-            <a href="#" className="hover:text-blue-500 dark:text-white">
+            <a href="#about" className="hover:text-blue-500 dark:text-white">
               About
             </a>
-            <a href="#" className="hover:text-blue-500 dark:text-white">
+            <a href="#services" className="hover:text-blue-500 dark:text-white">
               Services
             </a>
-            <a href="#" className="hover:text-blue-500 dark:text-white">
-              Contact
+            <a href="#gallery" className="hover:text-blue-500 dark:text-white">
+              Gallery
             </a>
           </div>
         </div>
         {menuOpen && (
           <div className="md:hidden px-4 pb-4 flex flex-col space-y-2">
-            <a href="#" className="text-blue-600 font-semibold">
+            <a href="#home" className="text-blue-600 font-semibold">
               Home
             </a>
-            <a href="#" className="hover:text-blue-500 dark:text-white">
+            <a href="#about" className="hover:text-blue-500 dark:text-white">
               About
             </a>
-            <a href="#" className="hover:text-blue-500 dark:text-white">
+            <a href="#services" className="hover:text-blue-500 dark:text-white">
               Services
             </a>
-            <a href="#" className="hover:text-blue-500 dark:text-white">
-              Contact
+            <a href="#gallery" className="hover:text-blue-500 dark:text-white">
+              Gallery
             </a>
           </div>
         )}
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-blue-50 dark:bg-gray-900 pt-28 pb-20">
-        <div className="max-w-screen-xl mx-auto px-4 grid lg:grid-cols-12 gap-8 items-center">
+      <section
+        id="home"
+        className="bg-blue-50 dark:bg-gray-900 pt-28 pb-20 relative overflow-hidden"
+      >
+        <div className="absolute top-0 left-0 w-40 h-40 bg-blue-300 opacity-20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-60 h-60 bg-purple-300 opacity-10 rounded-full blur-3xl animate-pulse"></div>
+
+        <div className="max-w-screen-xl mx-auto px-4 grid lg:grid-cols-12 gap-12 items-center z-10 relative">
+          {/* ข้อความแนะนำตัว */}
           <div className="lg:col-span-7">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              Hello I'm  <br /> Natdanai Jitphimai
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
+              Hello I'm <br />
+              <span className="text-blue-600 dark:text-blue-400">
+                Natdanai Jitphimai
+              </span>
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
+
+            <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg leading-relaxed">
               มุ่งมั่นในการพัฒนาทักษะและความรู้เพื่อสร้างสรรค์งานที่มีคุณภาพ
               พร้อมรับความท้าทายและการเรียนรู้ใหม่ๆ
             </p>
-            <a
-              href="#"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold"
-            >
-              Get Started
-            </a>
+
+            <div className="flex gap-4">
+              <a
+                href="#contact"
+                className="px-6 py-3 bg-blue-600 text-white font-medium rounded-full shadow hover:bg-blue-700 transition duration-300"
+              >
+                ดูผลงาน
+              </a>
+              <a
+                href="#about"
+                className="px-6 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 font-medium rounded-full hover:bg-blue-50 dark:hover:bg-gray-800 transition duration-300"
+              >
+                ติดต่อฉัน
+              </a>
+            </div>
           </div>
+
+          {/* รูปโปรไฟล์ */}
           <div className="lg:col-span-5 hidden lg:block">
             <img
-              src="/images/IMG_0165-1.jpg"
-              className="rounded-tr-[80px] rounded-bl-[80px] shadow-lg"
+              src="./images/IMG_0165-1.jpg"
+              className="rounded-[80px] shadow-2xl transform hover:scale-105 transition duration-500"
               alt="Profile"
             />
           </div>
@@ -202,12 +222,12 @@ function App() {
       </section>
 
       {/* About Me */}
-      <section className="bg-white dark:bg-gray-800 py-20 px-4">
+      <section id="about" className="bg-white dark:bg-gray-800 py-20 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex justify-center lg:justify-end">
             <img
-              src="/images/IMG_0165-1.jpg"
-              className="rounded-tr-[80px] rounded-bl-[80px] shadow-lg w-full max-w-sm"
+              src="./images/IMG_0165-1.jpg"
+              className="rounded-[50px]  shadow-lg w-full max-w-sm"
               alt="Profile"
             />
           </div>
@@ -220,26 +240,30 @@ function App() {
               ส่วนหน้าของเว็บไซต์, ธุรการบุคคลและทั่วไป, การตลาดดิจิทัล
               หรือการออกแบบเว็บไซต์
             </p>
-            <div className="mt-5 space-y-3 text-sm text-gray-50">
-              <p className="flex items-center">
-                <img src="/images/phone-call.png" className="w-5 h-5 mr-2" />
-                โทร : 0651097086
-              </p>
-              <p className="flex items-center">
-                <img src="/images/email-1.png" className="w-5 h-5 mr-2" />
-                email : 12natdanai.j@gmail.com
-              </p>
-              <p className="flex items-center">
-                <img src="/images/location.png" className="w-5 h-5 mr-2" />
-                9/1 หมู่ 6 ต.ในเมือง อ.พิมาย จ.นครราชสีมา
-              </p>
-            </div>
+            {/* ข้อมูลการติดต่อ */}
+      <div className="mt-6 space-y-4 text-base text-gray-800 dark:text-gray-200">
+        <div className="flex items-center">
+          <img src="./images/phone-call.png" className="w-5 h-5 mr-3" />
+          <span className="font-medium">โทร:</span> 065-109-7086
+        </div>
+        <div className="flex items-center">
+          <img src="./images/email-1.png" className="w-5 h-5 mr-3" />
+          <span className="font-medium">Email:</span> 12natdanai.j@gmail.com
+        </div>
+        <div className="flex items-center">
+          <img src="./images/location.png" className="w-5 h-5 mr-3" />
+          <span className="font-medium">ที่อยู่:</span> 9/1 หมู่ 6 ต.ในเมือง อ.พิมาย จ.นครราชสีมา
+        </div>
+      </div>
           </div>
         </div>
       </section>
 
       {/* Services */}
-      <section className="bg-yellow-50 dark:bg-gray-900 py-20 px-4 text-center">
+      <section
+        id="services"
+        className="bg-yellow-50 dark:bg-gray-900 py-20 px-4 text-center"
+      >
         <h3 className="text-yellow-500 uppercase text-sm">Services</h3>
         <h1 className="text-3xl font-bold mt-2 mb-6 dark:text-white">
           สำรวจทักษะและผลงานของฉันด้านล่าง
@@ -251,7 +275,7 @@ function App() {
               className="bg-gray-900 p-6 w-64 rounded-lg hover:scale-105 transition"
             >
               <img
-                src={`/images/${service.icon}`}
+                src={`./images/${service.icon}`}
                 className="w-12 h-12 mx-auto mb-4"
                 alt={service.name}
               />
@@ -264,7 +288,7 @@ function App() {
       </section>
 
       {/* Accordion Section */}
-      <section className="bg-green-50 dark:bg-gray-800 py-20 px-6">
+      <section id="contact" className="bg-green-50 dark:bg-gray-800 py-20 px-6">
         <h2 className="text-3xl font-bold text-gray-50 mb-6 text-center">
           ประวัติการศึกษา/ประสบการณ์ทำงาน
         </h2>
@@ -290,41 +314,58 @@ function App() {
       </section>
 
       {/* Gallery Section */}
-      <section className="dark:bg-gray-900 py-20 px-6">
-        <h2 className="text-3xl font-bold text-white mb-6 text-center">
-          แกลเลอรี่ผลงาน
-        </h2>
-        <div className="flex justify-center flex-wrap gap-4 mb-8">
-          {["All", "UX/UI Designing", "เว็บไซต์", "Graphic Designing","certificate"].map((category) => (
-            <button
-              key={category}
-              onClick={() => setFilter(category)}
-              className={`px-4 py-2 rounded-full border transition ${
-                filter === category
-                  ? "bg-white text-black"
-                  : "text-white border-white hover:bg-white hover:text-black"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {filteredItems.map((item, index) => (
-            <img
-              key={index}
-              src={item.src}
-              alt={item.tag}
-              className="rounded-lg shadow-md w-full h-auto"
-            />
-          ))}
-        </div>
-      </section>
+      <section id="gallery" className="dark:bg-gray-900 py-20 px-6 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-black">
+  <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-10 text-center">
+    🎨 แกลเลอรี่ผลงานของฉัน
+  </h2>
+
+  {/* Filter Buttons */}
+  <div className="flex justify-center flex-wrap gap-3 mb-8">
+    {["All", "UX/UI Designing", "เว็บไซต์", "Graphic Designing", "certificate"].map(
+      (category) => (
+        <button
+          key={category}
+          onClick={() => setFilter(category)}
+          className={`px-5 py-2 text-sm rounded-full border font-medium transition ${
+            filter === category
+              ? " text-white"
+              : "border-gray-400 text-gray-700 dark:text-white   hover:text-white"
+          }`}
+        >
+          {category}
+        </button>
+      )
+    )}
+  </div>
+
+  {/* Image Gallery */}
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    {filteredItems.map((item, index) => (
+      <img
+        key={index}
+        src={item.src}
+        alt={item.tag}
+        className="rounded-xl shadow-lg transition-transform hover:scale-105"
+      />
+    ))}
+  </div>
+</section>
+
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white text-center py-6">
-        <p>&copy; 2025 Natdanai Jitphimai. All rights reserved.</p>
-      </footer>
+      <footer className="bg-gray-900 text-white text-center py-6 relative">
+  <p className="mb-2">&copy; 2025 Natdanai Jitphimai. All rights reserved.</p>
+  <div className="flex justify-center gap-4">
+    <a href="mailto:12natdanai.j@gmail.com">
+      <img src="./images/email-1.png" className="w-5 h-5 hover:scale-110 transition" />
+    </a>
+    <a href="tel:0651097086">
+      <img src="./images/phone-call.png" className="w-5 h-5 hover:scale-110 transition" />
+    </a>
+    {/* เพิ่ม social link ได้ที่นี่ */}
+  </div>
+</footer>
+
     </>
   );
 }
