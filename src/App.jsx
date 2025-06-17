@@ -88,19 +88,19 @@ function App() {
 
   const galleryItems = [
     { src: "./images/Screenshot-230252.png", tag: "UX/UI Designing" },
-    { src: "./images/Screenshot-230520.png", tag: "เว็บไซต์" },
-    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
-    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
-    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
-    { src: "./images/Screenshot-230520.png", tag: "เว็บไซต์" },
     { src: "./images/Screenshot-230520.png", tag: "UX/UI Designing" },
     { src: "./images/Screenshot-230755.png", tag: "UX/UI Designing" },
     { src: "./images/Screenshot-225130.png", tag: "UX/UI Designing" },
     { src: "./images/Screenshot-225901.png", tag: "UX/UI Designing" },
     { src: "./images/Screenshot-230938.png", tag: "UX/UI Designing" },
+    { src: "./images/Screenshot-230520.png", tag: "Website" },
+    { src: "./images/Screenshot-230520.png", tag: "Website" },
+    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
+    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
+    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
+    { src: "./images/project1.png", tag: "Graphic Designing" },
     { src: "./images/Screenshot-234113.png", tag: "certificate" },
     { src: "./images/Screenshot-233746.png", tag: "certificate" },
-    { src: "./images/project1.png", tag: "Graphic Designing" },
     { src: "./images/Screenshot-233534.png", tag: "certificate" },
   ];
 
@@ -321,7 +321,7 @@ function App() {
 
   {/* Filter Buttons */}
   <div className="flex justify-center flex-wrap gap-3 mb-8">
-    {["All", "UX/UI Designing", "เว็บไซต์", "Graphic Designing", "certificate"].map(
+    {["All", "UX/UI Designing", "Website", "Graphic Designing", "certificate"].map(
       (category) => (
         <button
           key={category}
