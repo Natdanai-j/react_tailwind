@@ -95,7 +95,6 @@ function App() {
     { src: "./images/Screenshot-230938.png", tag: "UX/UI Designing" },
     { src: "./images/Screenshot-230520.png", tag: "Website" },
     { src: "./images/Screenshot-230520.png", tag: "Website" },
-    { src: "./images/Screenshot-230520.png", tag: "Graphic Designing" },
     { src: "./images/graphic001.jpg", tag: "Graphic Designing" },
     { src: "./images/graphic002.jpg", tag: "Graphic Designing" },
     { src: "./images/graphic003.jpg", tag: "Graphic Designing" },
