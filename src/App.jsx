@@ -29,7 +29,7 @@ function App() {
             <p className="text-sm text-gray-600 dark:text-gray-300">
               คณะบริหารธุรกิจ | ระบบสารสนเทศและนวัตกรรมธุรกิจดิจิทัล
             </p>
-            <span className="text-sm text-gray-500">2566 - ปัจจุบัน</span>
+            <span className="text-sm text-gray-500">2566 - 2568</span>
           </div>
           <div>
             <h3 className="text-lg font-semibold dark:text-white">
@@ -53,9 +53,34 @@ function App() {
       ),
     },
     {
-      title: "\uD83D\uDCBC ประสบการณ์ฝึกงาน",
+      title: "\uD83D\uDCBC ประสบการณ์ฝึกงานและทำงาน",
       content: (
         <div className="space-y-6 border-l-2 border-blue-500 pl-4">
+          <div>
+            <h3 className="text-lg font-semibold dark:text-white">
+              โรงเรียนพิมายวิทยา
+            </h3>
+            <p className="text-sm text-gray-500">2568</p>
+            <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
+              <li>เจ้าหน้าที่สื่อสารองค์กรโรงเรียนพิมายวิทยา</li>
+              <li>ออกแบบและจัดทำจดหมายข่าวของโรงเรียนพิมายวิทยา</li>
+              <li>จัดทำสื่อประชาสัมพันธ์กิจกรรมต่างๆของโรงเรียน</li>
+              <li>ช่วยดูแลเพจรองของโรงเรียน</li>
+              <li>บันทึกภาพกิจกรรมสัมคัญเพื่อใช้ในงานวารสารและเว็บไซต์โรงเรียน</li>
+              
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold dark:text-white">
+              ไปรษณีย์ นครราชสีมา
+            </h3>
+            <p className="text-sm text-gray-500">2568</p>
+            <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
+              <li>พนักงานขาออกพัสดุ</li>
+              <li>บริหารจัดการและตรวจสอบความถูกต้องของพัสดุ</li>
+              
+            </ul>
+          </div>
           <div>
             <h3 className="text-lg font-semibold dark:text-white">
               แคนนอน ไฮเทค (ประเทศไทย)
@@ -94,9 +119,11 @@ function App() {
     { src: "./images/Screenshot-225901.png", tag: "UX/UI Designing" },
     { src: "./images/Screenshot-230938.png", tag: "UX/UI Designing" },
     { src: "./images/web001.png", tag: "Website" },
-    { src: "./images/graphic001.jpg", tag: "Graphic Designing" },
-    { src: "./images/graphic002.jpg", tag: "Graphic Designing" },
-    { src: "./images/graphic003.jpg", tag: "Graphic Designing" },
+    { src: "./images/news001.png", tag: "Graphic Designing" },
+    { src: "./images/news002.png", tag: "Graphic Designing" },
+    { src: "./images/news003.png", tag: "Graphic Designing" },
+    { src: "./images/news004.png", tag: "Graphic Designing" },
+    { src: "./images/news005.gif", tag: "Graphic Designing" },
     { src: "./images/project1.png", tag: "Graphic Designing" },
     { src: "./images/Screenshot-234113.png", tag: "certificate" },
     { src: "./images/Screenshot-233746.png", tag: "certificate" },
@@ -235,9 +262,9 @@ function App() {
               เกี่ยวกับฉัน
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              ผมกำลังมองหาโอกาสในการทำงานในด้านพัฒนาเว็บไซต์,
-              ส่วนหน้าของเว็บไซต์, ธุรการบุคคลและทั่วไป, การตลาดดิจิทัล
-              หรือการออกแบบเว็บไซต์
+              บัณฑิตจบใหม่สาขาระบบสารสนเทศที่มีความเชี่ยวชาญในการจัดการงานธุรการและเอกสารอย่างเป็นระบบมีทักษะการใช้ Microsoft Office 
+              และสามารถนำทักษะ <br />ด้านกราฟิกดีไซน์มาประยุกต์ใช้ในการจัดทำสื่อประชาสัมพันธ์องค์กรได้ พร้อมเรียนรู้งาน
+              มีความละเอียดรอบคอบและมุ่งมั่นที่จะช่วยสนับสนุนให้งานรบบในองค์กรราบรื่น
             </p>
             {/* ข้อมูลการติดต่อ */}
       <div className="mt-6 space-y-4 text-base text-gray-800 dark:text-gray-200">
